@@ -1,0 +1,23 @@
+ 
+BEGIN TRANSACTION
+
+IF NOT EXISTS (SELECT object_id FROM sys.tables WHERE name = 'TaskList') BEGIN
+
+		CREATE  TABLE [dbo].[TaskList]
+		(
+			IdTaskList INT NOT NULL IDENTITY PRIMARY KEY,
+			Titulo VARCHAR(50) NOT NULL,
+			Descricao VARCHAR(1000) NULL,
+			Finalizada BIT NOT NULL,
+			DataInicio DATETIME NOT NULL,
+			DataFim DATETIME NULL,
+			DataCriacao DATETIME NOT NULL,
+			DataAlteracao DATETIME NULL
+		) 
+		
+		PRINT 'TABELA TaskList CRIADA COM SUCESSO'
+	END 
+ELSE
+	BEGIN 
+		PRINT 'TABELA TaskList JA EXISTENTE'
+	END 
