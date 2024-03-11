@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "b6967a7a-1b2d-4379-bb91-5afa6c530217",
+		"name": "TaskListProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12619614"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "TaskList",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/TaskList/:id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/TaskList/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"TaskList",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"tarefas\": {\n    \"idTaskList\": \"<integer>\",\n    \"titulo\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"finalizada\": \"<boolean>\",\n    \"dataInicio\": \"<dateTime>\",\n    \"dataFim\": \"<dateTime>\",\n    \"dataCricao\": \"<dateTime>\",\n    \"dataAlteracao\": \"<dateTime>\"\n  },\n  \"mensagem\": \"<string>\",\n  \"sucesso\": \"<boolean>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "/api/TaskList/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "text/plain"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/TaskList/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"TaskList",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "<boolean>"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/TaskList",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7252/api/TaskList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7252",
+									"path": [
+										"api",
+										"TaskList"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"tarefas\": {\n      \"idTaskList\": \"<integer>\",\n      \"titulo\": \"<string>\",\n      \"descricao\": \"<string>\",\n      \"finalizada\": \"<boolean>\",\n      \"dataInicio\": \"<dateTime>\",\n      \"dataFim\": \"<dateTime>\",\n      \"dataCricao\": \"<dateTime>\",\n      \"dataAlteracao\": \"<dateTime>\"\n    },\n    \"mensagem\": \"<string>\",\n    \"sucesso\": \"<boolean>\"\n  },\n  {\n    \"tarefas\": {\n      \"idTaskList\": \"<integer>\",\n      \"titulo\": \"<string>\",\n      \"descricao\": \"<string>\",\n      \"finalizada\": \"<boolean>\",\n      \"dataInicio\": \"<dateTime>\",\n      \"dataFim\": \"<dateTime>\",\n      \"dataCricao\": \"<dateTime>\",\n      \"dataAlteracao\": \"<dateTime>\"\n    },\n    \"mensagem\": \"<string>\",\n    \"sucesso\": \"<boolean>\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/TaskList",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"titulo\": \"Tarefa 2\",\n  \"descricao\": \"Descricao Tarefa 2\",\n  \"finalizada\": false,\n  \"dataInicio\": \"2024-03-11\",\n  \"dataFim\": \"2004-03-15\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7252/api/TaskList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7252",
+									"path": [
+										"api",
+										"TaskList"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"titulo\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"finalizada\": \"<boolean>\",\n  \"dataInicio\": \"<dateTime>\",\n  \"dataFim\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"tarefas\": {\n    \"idTaskList\": \"<integer>\",\n    \"titulo\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"finalizada\": \"<boolean>\",\n    \"dataInicio\": \"<dateTime>\",\n    \"dataFim\": \"<dateTime>\",\n    \"dataCricao\": \"<dateTime>\",\n    \"dataAlteracao\": \"<dateTime>\"\n  },\n  \"mensagem\": \"<string>\",\n  \"sucesso\": \"<boolean>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/TaskList",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idTaskList\": \"2\",\n  \"finalizada\": true\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7252/api/TaskList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7252",
+									"path": [
+										"api",
+										"TaskList"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"idTaskList\": \"<integer>\",\n  \"finalizada\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"tarefas\": {\n    \"idTaskList\": \"<integer>\",\n    \"titulo\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"finalizada\": \"<boolean>\",\n    \"dataInicio\": \"<dateTime>\",\n    \"dataFim\": \"<dateTime>\",\n    \"dataCricao\": \"<dateTime>\",\n    \"dataAlteracao\": \"<dateTime>\"\n  },\n  \"mensagem\": \"<string>\",\n  \"sucesso\": \"<boolean>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/TaskList",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idTaskList\": \"<integer>\",\n  \"titulo\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"finalizada\": \"<boolean>\",\n  \"dataInicio\": \"<dateTime>\",\n  \"dataFim\": \"<dateTime>\",\n  \"dataCricao\": \"<dateTime>\",\n  \"dataAlteracao\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7252/api/TaskList",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7252",
+									"path": [
+										"api",
+										"TaskList"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"idTaskList\": \"<integer>\",\n  \"titulo\": \"<string>\",\n  \"descricao\": \"<string>\",\n  \"finalizada\": \"<boolean>\",\n  \"dataInicio\": \"<dateTime>\",\n  \"dataFim\": \"<dateTime>\",\n  \"dataCricao\": \"<dateTime>\",\n  \"dataAlteracao\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/TaskList",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"TaskList"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"tarefas\": {\n    \"idTaskList\": \"<integer>\",\n    \"titulo\": \"<string>\",\n    \"descricao\": \"<string>\",\n    \"finalizada\": \"<boolean>\",\n    \"dataInicio\": \"<dateTime>\",\n    \"dataFim\": \"<dateTime>\",\n    \"dataCricao\": \"<dateTime>\",\n    \"dataAlteracao\": \"<dateTime>\"\n  },\n  \"mensagem\": \"<string>\",\n  \"sucesso\": \"<boolean>\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

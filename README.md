@@ -10,10 +10,16 @@ Projeto CRUD "básico" de listagem de tarefas, desenvolvido utilizando .NET 7 e 
 
 Configurações necesárias:
 
- -  Na pasta TaskList/Db há o script para criação da tabela a ser utilizada
+ - Na pasta TaskList/Db há o script para criação da tabela a ser utilizada
  - Há, também, um script auxiliar para criação das tarefas, via banco de dados
  - A porta configurada para rodar a aplicação é a : localhost:7252
 
+
+
+## Collection Postman para execução dos endpoints da API
+
+ - Na pasta Postman Collection/TaskListProject.postman_collection.json
+ - Basta apenas importar para dentro do aplicatico Postman
 
 ## Documentação da API
 
