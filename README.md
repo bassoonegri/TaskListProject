@@ -1,5 +1,5 @@
 
-# Título do Projeto
+# Lista de Tarefas
 
 Projeto CRUD "básico" de listagem de tarefas, desenvolvido utilizando .NET 7 e Entity 
 
